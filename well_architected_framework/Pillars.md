@@ -3,8 +3,8 @@
 - Support Development
 - run Workloads
 - gain insight
-- continously improve
-- continously support
+- continuously improve
+- continuously support
 ### Perform ops as Code
 - USE IaC!
 - limit human error
@@ -12,7 +12,7 @@
 ### Small changes
 - Design processes to be updated regularly
 - small increments
-- when possible use backword copatabilty
+- when possible use backward compatibility
 ### Refine ops frequently
 - look to improve
 - use game days
@@ -25,39 +25,39 @@
 ## Security
 - protect data
 - protect systems
-### Implement a strind identiy foundation
-- least privlege
-- separation of dutys
-- authoriastion for each interaction
-- central id managment
-- eliminate reliance on long term staic credentials
-### traceabily
+### Implement a strict identity foundation
+- least privilege
+- separation of duties
+- authorization for each interaction
+- central id management
+- eliminate reliance on long term static credentials
+### traceability
 - logs and monitoring
 ### Security at all layers
 - vpc
-- netowrk
+- network
 - ec2
 - application
 - os
 - code
 ### Automate security best practices
-- improves the abilty to scale
+- improves the ability to scale
 ### Protect data in transit and at rest
 - encryption
 - access control
 ### Keep people away
 - restrict access as much as possible
 ### Prepare for the worst
-- incident managment and investigation policy
+- incident management and investigation policy
 
-## Reliabilty
+## Reliability
 - perform a workload correctly
 ## Performance Efficiency
-- use computing ressources efficently
-- maintain efficenty through change
-## Cost optimisation
-- deliver buissness value at lowest price point
-## Sustainabilty
-- reduce energy consuption
+- use computing resources efficiently
+- maintain efficiency through change
+## Cost optimization
+- deliver business value at lowest price point
+## Sustainability
+- reduce energy consumption
 - maximize benefits of resources
-- minimize ressources required
+- minimize resources required

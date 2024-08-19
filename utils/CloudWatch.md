@@ -7,11 +7,11 @@ Central service for all logs and metrics in AWS.
 ## Features
 - can setup alarms
 - can stop, terminate, reboot and recover [[EC2]] instances
-- can trigger [[Lambda]] or [[EventBride]]
+- can trigger [[Lambda]] or [[EventBridge]]
 
 ## Cloudwatch Metrics
 - metrics for every service in AWS
-- bucketet by namespaces
+- bucket by namespaces
 - a metric can has up to 10 attributes
 - metrics can have timestamps
 - can create dashboard
@@ -19,27 +19,27 @@ Central service for all logs and metrics in AWS.
 
 ### Cloudwatch metrics streams
 - continually stream cloudwatch metrics to 
-- [[Kinesis]] Firehouse
+- [[Kinesis]] Firehose
 - 3rd party providers
 - option to filter metrics, to just send a subset
 
 ## Cloudwatch Logs
 - Log groups (application name)
-- log steam (log files, instances whitin on app, containers)
-- can define log expiration days
+- log stream (log files, instances within on app, containers)
+- can define log expiration dates
 
 ### Targets To Send Logs To
 - [[S3]]
 - [[Kinesis]] data streams
-- [[Kinesis]] data firehouse
+- [[Kinesis]] data firehose
 - [[Lambda]]
 - elasticsearch
 
 ### How to send Logs
 - SDK
-- Cloudwatch Logs Angent
+- Cloudwatch Logs Agent
 - Cloudwatch unified agent
-- [[ElasticBeanstalk]], collection of logs from applciation
+- [[ElasticBeanstalk]], collection of logs from application
 - [[ECS]] collection from containers
 - aws [[Lambda]] collection from function logs
 - [[VPC]] flow logs
@@ -50,7 +50,7 @@ Central service for all logs and metrics in AWS.
 ### Filter 
 - look for ip 
 - look for string
-- can trigger cloudwatch alarmas
+- can trigger cloudwatch alarms
 
 ### Insights
 - query logs for dashboard
@@ -59,30 +59,29 @@ Central service for all logs and metrics in AWS.
 - collect and aggregate logs from containers
 - [[ECS]]
 - [[EKS]]
-- [[EKS]]
 - [[ECS]] Fargate
 - used containerized version of the container agent
 
 #### Lambda Insights
-- metircs for [[Lambda]] functions
+- metrics for [[Lambda]] functions
 - is provided via [[Lambda]] layer
 
-#### Contributer Insights
-- Top N Contributers to Network traffic
+#### Contributor Insights
+- Top N Contributors to Network traffic
 - identify bad hosts
 
 #### Application Insights
 - automated dashboard with monitored applications
-- suport only select techstack on ec2 (java, iis, databases)
-- can use additional ressources ([[RDS]], [[S3]], [[SNS]] ...)
-- Powered by Sage maker
+- support only select tech stack on ec2 (java, iis, databases)
+- can use additional resources ([[RDS]], [[S3]], [[SNS]] ...)
+- Powered by Sagemaker
 - reduce time to troubleshoot
-- alters and findigs are sent to [[EventBride]] and [[SSM]] OpsCenter
+- alters and findings are sent to [[EventBridge]] and [[SSM]] OpsCenter
 
 ### Export
 -  to s3 up to 12 hours
 - api call is createexporttask
-- use log sbursciptions for real tiome
+- use log subscriptions in real time
 
 ### Log subscriptions
 - Uses a filter
@@ -106,18 +105,18 @@ Central service for all logs and metrics in AWS.
 
 ### Metrics
 - CPU
-- DISK (io remianing)
+- DISK (io remaining)
 - RAM
 - NetStat
 - processes
 - swap space
 
-## Cloudwatch Alarams
+## Cloudwatch Alarms
 - trigger notifications from any metric
 
 ### Stages
 - OK
-- Inssufficent Data
+- Insufficient Data
 - Alarm
 
 ### Period

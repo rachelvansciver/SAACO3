@@ -32,4 +32,4 @@ pathtoBucket/pathtotable
 
 ## Federated query
 - query data from outside from [[S3]]
-- use data source connectior ([[Lambda]] function which connects to another service)
+- use data source connector ([[Lambda]] function which connects to another service)

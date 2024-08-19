@@ -1,13 +1,12 @@
 # AWS Glue
-- ETL Service
+- ETL Service (Extract, Transform, Load)
 - serverless
-
-- perpare and load data for analytics
+- prepare and load data for analytics
 
 ## Job Bookmarks
-- prevent reproccessing old data
+- prevent reprocessing old data
 ## Views
-- combine and replicate data across multiple data stores with sQL
+- combine and replicate data across multiple data stores with SQL
 - uses a virtual table
 ## Data Brew
 - clean and normalize data using pre build transform

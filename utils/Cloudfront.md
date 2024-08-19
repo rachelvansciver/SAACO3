@@ -2,15 +2,15 @@
 - CDN
 - data, videos, application and apis delivery
 - global
-- regional edge cachhes
+- regional edge caches
 - only http based requests
 
 ## Origins
 
 ### [[S3]]
 - caching
-- distributoing
-- enhanced securty with (OAI)
+- distributing
+- enhanced security with (OAI)
 - Cloudfront can be upload point to S3
 
 ### Custom Endpoint
@@ -19,26 +19,26 @@
 - [[S3]] Website
 - Any HTTP backend
 
-## Geo Restirction
+## Geo Restriction
 - whitelist countries
-- blacklist coutries
+- blacklist countries
 - use for copyright laws
 
 ## Price Classes
-- depends on data transfer, but is diffrent for each edge location
+- depends on data transfer, but is different for each edge location
 - price goes down if you transfer more data
 
 ### All
 - all regions - best performance - highest price
 
 ### 200
-- most regions - exludes most exp
+- most regions - excludes most exp
 
 ### 100
 - only cheapest regions 
 
 ## Cache Invalidations
-- invalide via api and path
+- invalidate via api and path
 
 ## Customization at Edge
 - serverless
@@ -52,17 +52,17 @@
 - bot mitigation
 - real time image transform
 - a/b testing
-- Dynmaic Web Apps at Edge
+- Dynamic Web Apps at Edge
 - User prio
-- tracking ad analytics
+- tracking and analytics
 - user auth 
 
 ### Cloudfront Edge function
 - code attached to cloudfront distributions
-- runs closer to users for min latency
+- runs closer to users for minimum latency
 - lightweight written in js
-- high scale latency senstive cns customisations
-- sub ms startuptimes
+- high scale latency sensitive cns customizations
+- sub ms startup times
 - managed in cloudfront
 - millions of request per second
 
@@ -71,13 +71,13 @@
 - 1/5 of [[Lambda]] @Edge
 
 #### Use cases
-- cache key normalisation (transform request attributes)
+- cache key normalization (transform request attributes)
 - header manipulation
-- url rewrites and rediect
+- url rewrites and redirect
 - validate jwt tokens
 
 ### [[Lambda]] at Edge
-- nodeJs or python
+- node.js or python
 - 1ks of request per second
 - can change every part of the request (viewer and origin)
 
@@ -85,8 +85,8 @@
 - no free tier
 
 #### Use cases
-- loner exec time
-- adjustible cpu memory
+- longer exec time
+- adjustable cpu memory
 - code depends on 3rd party (AWS CLI)
 - Network access
 - File System Access
