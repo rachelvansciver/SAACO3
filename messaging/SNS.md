@@ -2,12 +2,12 @@
 # Amazon Simple Notification Service
 
 ## TLDR
-Message queue with a subscriber model. It can send the same message to alot of diffrent services at once. Scales good but not indefinetly.
+Message queue with a subscriber model. It can send the same message to a lot of different services at once. Scales good but not indefinitely.
 
 ## Features
 - subscriber async model
 - one producer multiple consumers/subscribers
-- up to 12 million subscribtions per topic
+- up to 12 million subscriptions per topic
 - up to 100k topics
 
 ## Sources

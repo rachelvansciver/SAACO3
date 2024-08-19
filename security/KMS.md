@@ -9,13 +9,13 @@
 - scoped per region
 ## Key Types
 
-### Symetric
+### Symmetric
 - AES256 keys
 - single key to encrypt and decrypt
 - AWS services which use KMS use this
 - you can only get this key via api call
 
-### Asymetric
+### Asymmetric
 - public key (encrypt)
 - private key (decrypt)
 - can download public key

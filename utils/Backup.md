@@ -2,12 +2,12 @@
 # AWS Backup
 
 ## TLDR
-AWS Backup is a service to centraly manage and review your backup strategies.
+AWS Backup is a service to centrally manage and review your backup strategies.
 
 ## Features
 - central place to manage and automate backups across AWS Services
 - cross region backups
-- cross account backupos
+- cross account backups
 - PITR support
 - can create backup policies (backup plans)
 - tag based

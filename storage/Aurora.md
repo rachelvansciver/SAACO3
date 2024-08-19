@@ -2,11 +2,11 @@
 # Amazon Aurora
 
 ## TLDR
-AWS Created custom DB tech, very high performan. Useful for global and serverless relational database applications.
+AWS Created custom RDS, very high performance. Useful for global and serverless relational database applications.
 
 ## Features
 - not open source
-- MySQL and Postgre
+- MySQL and Postgres
 - global
 - self healing
 - fault tolerant
@@ -15,11 +15,13 @@ AWS Created custom DB tech, very high performan. Useful for global and serverles
 - multi az
 - each az has a copy of the cluster
 - 5x faster than mysql
-- 3x fast than postgre
+- 3x fast than postgres
 - up to 15 replicas
 - faster replication
 - 20% more cost than [[RDS]]
 - restore to any point in time
+- no read-through caching
+- no stand-by instance (only amazon RDS)
 
 ## Primary DB
 - read and write
@@ -45,7 +47,7 @@ AWS Created custom DB tech, very high performan. Useful for global and serverles
 ## Aurora multi master
 - all nodes are read write nodes there is no master
 - replication between all nodes
-- use for imediate failover
+- use for immediate failover
 
 ## Global Aurora Database
 - 1 primary region for read an write
@@ -53,7 +55,7 @@ AWS Created custom DB tech, very high performan. Useful for global and serverles
 - up to 16 read replicas for each read region
 - less than 1 second for replication across region
 
-## Aurora machine learing
+## Aurora machine learning
 - ML based predications to your apps via SQL
 
 ### Use cases
@@ -84,4 +86,4 @@ AWS Created custom DB tech, very high performan. Useful for global and serverles
 - create a new aurora cluster from a existing one
 - faster than snapshot & restore
 - cost effective
-- usful to create staging
+- useful to create staging
