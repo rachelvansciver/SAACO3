@@ -1,18 +1,18 @@
 ![[Pasted image 20221030213328.png]]
-# Identity and Access Mangment
+# Identity and Access Management
 
 ## TLDR
-AWS IAM is a global service. Its used in nearly all other services to control permissions and interaction boundaries in regards to resources and services in your account. Its also required to manage users in your AWS Account or [[AWSOrganisations]]. Permissions come in the form of groups, role and policies.
+AWS IAM is a global service. Its used in nearly all other services to control permissions and interaction boundaries in regards to resources and services in your account. Its also required to manage users in your AWS Account or [[AWSOrganizations]]. Permissions come in the form of groups, role and policies.
 
 ### Best Practices
-- Dont use your root account for anything but account setup
+- Don't use your root account for anything but account setup
 - One physical users should also be one AWS user
 - Assign users to groups and assign permissions to groups
 - Use a password policy to prevent weak passwords
 - Use and enforce MFA
 - Use roles for services
 - Use access keys for accessing services 
-- Audit permissons with IAM Credential Report
+- Audit permissions with IAM Credential Report
 - Never share keys or user 
 - Use least privilege principle
 
@@ -24,7 +24,7 @@ AWS IAM is a global service. Its used in nearly all other services to control pe
 - One group can have multiple users
 ## Roles
 - intended to be used by AWS Services
-- can be used to access cross account ressources
+- can be used to access cross account resources
 
 ## Permission Boundary
 - maximum permission employees can grant to other entities
@@ -37,7 +37,7 @@ AWS IAM is a global service. Its used in nearly all other services to control pe
 - Attached to group, user or role as a json document.
 - Should use least privilege principle
 - If a user has multiple groups his permissions will be the composition of all policies of all groups
-- Deny always overwrites any alow
+- Deny always overwrites any allow
 ```json
 {
     "Version":"date", //required
@@ -62,11 +62,11 @@ AWS IAM is a global service. Its used in nearly all other services to control pe
 ```
 - restrict by client IP
 - restrict by target region
-- restrict by tag(user and ressouce)
+- restrict by tag(user and resource)
 - force mfa
 - account org
 ### Trust Policy
-- Defines/Limits which ressource an asume the IAM role
+- Defines/Limits which resource can assume the IAM role
 
 ## Password Policy
 
@@ -100,15 +100,15 @@ AWS IAM is a global service. Its used in nearly all other services to control pe
 ## IAM Security Tools
 
 ### IAM Credentials Report
-- Report of all  Accounts Users and credential status (pw, accesskeys, mfa etc)
+- Report of all Accounts Users and credential status (pw, access keys, mfa etc)
 
 ### IAM Access Advisor
-- target a single user or ressource and get the info of all service permissions and when that service was lastly accessed
+- target a single user or resource and get the info of all service permissions and when that service was lastly accessed
 - can be used to revise policies and roles
 
-## Roles vs Ressource Based Policies
-- when you assume a role, you give up all previous persmissions
-- Ressource based if a Iam entity needs to do multiple things on diffrent accounts
+## Roles vs Resource Based Policies
+- when you assume a role, you give up all previous permissions
+- Resource based if a IAM entity needs to do multiple things on different accounts
 
 ### [[EventBride]]
 - when [[EventBride]] runs any task it needs access for the target service

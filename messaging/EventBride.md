@@ -1,8 +1,8 @@
 ![[Pasted image 20221101205129.png]]
-# EventBride
+# EventBridge
 
 ## TLDR
-Central message service with the most amount of targets. Is used by aws behind the scenes alot
+Provides notifications of real time changes in your code, aws services, etc
 
 ## Features
 - schedule (cron jobs)
@@ -11,6 +11,7 @@ Central message service with the most amount of targets. Is used by aws behind t
 - can archive events
 - replay archived events
 - event json is typed, can be nice for custom code/lambda
+- IAM roles
 
 ## Sources
 - [[EC2]]
@@ -34,7 +35,7 @@ Central message service with the most amount of targets. Is used by aws behind t
 - [[SSM]]
 - 3rd Party
 - ...
-## Event Buses
+## Event Busses
 - supports resource based policies
 - can allow events from other accounts
 

@@ -5,7 +5,7 @@
 - gain insight
 - continuously improve
 - continuously support
-### Perform ops as Code
+### Perform operation as Code
 - USE IaC!
 - limit human error
 - consistency

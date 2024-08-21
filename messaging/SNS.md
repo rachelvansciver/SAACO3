@@ -20,7 +20,7 @@ Message queue with a subscriber model. It can send the same message to a lot of 
 - ...
 
 ## Targets
-- [[Kinesis]] Data Firehouse
+- [[Kinesis]] Data Firehose
 - [[SQS]]
 - [[Lambda]]
 - HTTP

@@ -2,7 +2,7 @@
 # Kinesis
 
 ## TLDR
-Kinesis is a set of services for streaming real time or next to real time data in AWS. Its generaly more expensive and more difficult to setup than [[SQS]] but offers more features and higher performance.
+Kinesis is a set of services for streaming real time or next to real time data in AWS. Its generally more expensive and more difficult to setup than [[SQS]] but offers more features and higher performance.
 
 
 ## Features
@@ -10,27 +10,27 @@ Kinesis is a set of services for streaming real time or next to real time data i
 - real time data streaming service
 - gigabytes of data per second
 - 100ks of sources
-- 2MBs/shard default shared between all consumers of kinesis streaam
+- 2MBs/shard default shared between all consumers of kinesis streams
 - use enhanced fan out to support multiple consumers, each consumer gets the 2mbs/shard
 - 1mbs input per shard 
-- shards need to be provioned ahead of time
+- shards need to be provisioned ahead of time
 - consume records up to 7 days later
 - multi applications consume the same stream
 - keep order of records
 - routing related records to the same consumer
 
-## Kineis Data Streams Detail
+## Kinesis Data Streams Detail
 - shards which split data and computing power
 
 ### Record
 - entry in kinesis
-- parition key which targets the shard
+- partition key which targets the shard
 - data blob (up to 1mb)
 - Producers can set 1mbs and 1000msg per sec per SHARD
 
 #### Consumer
-- recieves partion key, seceqnce number and blog
-- thoughput 2mbs per sec shared for all consumers
+- receives partition key, sequence number and blog
+- throughput 2mbs per sec shared for all consumers
 - enhances 2mb per sec per consumer
 - apps using sdk
 - [[Lambda]]
@@ -40,17 +40,17 @@ Kinesis is a set of services for streaming real time or next to real time data i
 ### Retention
 - between 1 and 365 days
 - can replay data
-- immutabilty
+- immutability
 
 ### Modes
 
-#### Provisoned Mode 
-- choose numer of shards, scale manualy
+#### Provisioned Mode 
+- choose number of shards, scale manually
 - 1mbs in 2 mbs sec out per shard
 - pay per shard per hour
 
 #### On demand
-- default capacity provisoned (4mbs)
+- default capacity provisioned (4mbs)
 - scales on throughput peak observed within the last 30 days
 - pay per hour and data in out per GB
 
@@ -62,15 +62,15 @@ Kinesis is a set of services for streaming real time or next to real time data i
 - [[VPC]] endpoint for access from [[VPC]]
 - monitor with [[CloudTrail]]
 
-## Kinesis Streams vs Firehouse
+## Kinesis Streams vs Firehose
 - Streams to capture data in real time, and ingest at scale
-- Firehouse to load streaming into aws data stores
-- Firehouse is not real time
-- Firehouse has close ended consumer options
-- Firehouse has a single target
+- Firehose to load streaming into aws data stores
+- Firehose is not real time
+- Firehose has close ended consumer options
+- Firehose has a single target
 
-## Firehouse
-- load steaming data into data stores/ lakes and analytic tools
+## Firehose
+- load streaming data into data stores/ lakes and analytic tools
 - serverless
 - scales to data throughput
 - aws managed
@@ -102,22 +102,22 @@ Kinesis is a set of services for streaming real time or next to real time data i
 ## Data Analytics for SQL Application
 - serverless
 - pay per consumption rate
-- read from Data Streams or Firehouse
-- use SQL Statements while refrencing [[S3]]
-- send againt to another Kinesis Stream or Firehouse
+- read from Data Streams or Firehose
+- use SQL Statements while referencing [[S3]]
+- send against to another Kinesis Stream or Firehose
 - stores data
 
 ### Usage
-- Real Time anaytics
+- Real Time analytics
 
-## Data Anaytics for Appache Flink
-- Use Flink (Java, Scala or SQL) to process or analyse streaming data
-- provison compute ressources
+## Data Analytics for Apache Flink
+- Use Flink (Java, Scala or SQL) to process or analyze streaming data
+- provision compute resources
 - parallel computing
 - automatic scaling
 - backups
 - any apache flink feature
-- uses aws manged cluster behind the scenes
+- uses aws managed cluster behind the scenes
 
 ## Sources
 - Kinesis Data Steams
@@ -131,15 +131,15 @@ Kinesis is a set of services for streaming real time or next to real time data i
 - kinesis your producers need to use the same partition/shard key for related data
 - in [[SQS]] there is no ordering
 - in [[SQS]] FIFO there is only one consumer and order stays the same
-- in [[SQS]] FIFO queue if you want to send related data to diffrent consumers you use a group id, which works then similar to kinesis
+- in [[SQS]] FIFO queue if you want to send related data to different consumers you use a group id, which works then similar to kinesis
 
 ### [[SQS]] VS [[SNS]] VS [[Kinesis]]
 
 #### [[SQS]] 
 - pull data then delete message via api call from consumer
-- Message is processed by exacly one consumer (hopefully)
+- Message is processed by exactly one consumer (hopefully)
 - as many workers at you want
-- scales indefiently
+- scales indefinitely
 - need fifo for order
 
 #### [[SNS]]
@@ -150,9 +150,9 @@ Kinesis is a set of services for streaming real time or next to real time data i
 #### Kinesis
 - standard 2mb per shard pull data
 - consumers can consume data concurrently
-- enhanced fan ut 2mb per shard per consumer , push data
+- enhanced fan out 2mb per shard per consumer , push data
 - limited amount of consumers (by shard)
 - replay data
-- ment for real time big data
+- meant for real time big data
 - ordering at shard level
 - data will expire after x days
