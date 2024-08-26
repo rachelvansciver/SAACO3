@@ -70,7 +70,7 @@ Kinesis is a set of services for streaming real time or next to real time data i
 - Firehose has a single target
 
 ## Firehose
-- load streaming data into data stores/ lakes and analytic tools
+- load streaming data into data stores/lakes and analytic tools
 - serverless
 - scales to data throughput
 - aws managed
@@ -78,6 +78,7 @@ Kinesis is a set of services for streaming real time or next to real time data i
 - transform
 - encrypt
 - SINGLE consumer
+- cannot write to firehose if delivery stream source is set as data streams
 
 ### Cost
 - pay per Data send
@@ -126,7 +127,8 @@ Kinesis is a set of services for streaming real time or next to real time data i
 ## Usage
 - more powerful queries
 - run complex queries
-
+## Kinesis Data Agent 
+- used to write to kinesis data streams or firehose
 ## Data Ordering in SQS vs Kinesis
 - kinesis your producers need to use the same partition/shard key for related data
 - in [[SQS]] there is no ordering

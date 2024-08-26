@@ -4,10 +4,10 @@
 - read replicas
 ## Elasticcache for Redis
 - in-memory data store
-- sub-milisecond latency
+- sub-millisecond latency
 - used for real-time application
 - supports replication, high availability and cluster sharding
-- HIPAA eligable 
+- HIPAA compliant
 - PCI DSS compliant
 ## RedisAuth
 - use aa password before client  can execute commands

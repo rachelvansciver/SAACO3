@@ -2,7 +2,7 @@
 - recording finical transactions
 - serverless
 - fully managed
-- hign available
+- highly available
 - replications across 3 az
 - immutable
 - cryptographic signature

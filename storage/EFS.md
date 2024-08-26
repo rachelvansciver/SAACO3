@@ -1,12 +1,12 @@
 ![[Pasted image 20221101130307.png]]
-# Eastic File System
+# Elastic File System
 
 ## TLDR 
 High performance network file system which is pay per gb use and can attach to multiple services in multiple AZs.
 
 ## Features
 - multi AZ
-- high avalilable, scalable and expensive
+- high available, scalable and expensive
 - pay per use
 - uses [[SecurityGroup]]
 
@@ -14,7 +14,7 @@ High performance network file system which is pay per gb use and can attach to m
 - Content Management, web serving, data sharing
 - NFSv4.1 protocol
 - Only compatible with linux
-- encyption at rest with [[KMS]]
+- encryption at rest with [[KMS]]
 - posix file system
 
 ## Performance
@@ -30,7 +30,7 @@ High performance network file system which is pay per gb use and can attach to m
 
 #### Max IO
 - higher latency and throughput
-- paralell
+- parallel
 - big data, media processing
 
 ### Throughput modes
@@ -45,8 +45,8 @@ High performance network file system which is pay per gb use and can attach to m
 ## Storage classes
 
 ### Storage Tiers
-- livecycle managemet for cost savings
-- uses livecycle policies
+- lifecycle management for cost savings
+- uses lifecycle policies
 
 #### Standard 
 - frequently access files
@@ -62,6 +62,6 @@ High performance network file system which is pay per gb use and can attach to m
 ### One Zone
 - one AZ
 - good for dev
-- compatible with infrequent acess ( for up to 90% in savings)
+- compatible with infrequent access ( for up to 90% in savings)
 - backup enabled by default
 

@@ -50,7 +50,7 @@ AWS Created custom RDS, very high performance. Useful for global and serverless 
 - use for immediate failover
 
 ## Global Aurora Database
-- 1 primary region for read an write
+- 1 primary region for read and write
 - up to 5 secondary read regions
 - up to 16 read replicas for each read region
 - less than 1 second for replication across region
@@ -73,7 +73,7 @@ AWS Created custom RDS, very high performance. Useful for global and serverless 
 ### Automated 
 - 1 to 35 days
 - can not be disabled
-- point in time recovery in that timeframe
+- point in time recovery in that time frame
 
 ### Manual
 - triggered by user

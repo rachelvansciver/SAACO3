@@ -7,7 +7,7 @@ Can be used for a hybrid cloud setup, where data is produced on premise and sync
 ## Usage
 - long term migrations
 - security
-- complicance
+- compliance
 - general IT strategy (hybrid cloud)
 - tiered storage
 - backup and restore
@@ -20,7 +20,7 @@ Can be used for a hybrid cloud setup, where data is produced on premise and sync
 - Translates save file request to http request to [[S3]]
 - Most recently used data is cached in file gateway, so it doesnt have to be fetched from aws
 
-### FSx File Gatway
+### FSx File Gateway
 - Native access to [[FSxWindowsFileServer]]
 - Local cache for frequently accessed data
 - Windows native compatiblity (SMB, NTFS, AD)
@@ -37,10 +37,10 @@ Can be used for a hybrid cloud setup, where data is produced on premise and sync
 - dataset on premise, backups are schedules to [[S3]]
 
 ### Tape Gateway
-- uses Virtual Tape libray
+- uses Virtual Tape library
 - for backup processes using physical Tapes
 - can send directly into [[S3]] Glacier
 
 ## Hardware appliance
 - Can be bought from amazon.com
-- Is a harware which will be your gateway (like a firewall)
+- Is a hardware which will be your gateway (like a firewall)

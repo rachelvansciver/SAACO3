@@ -15,16 +15,16 @@ UDP compatible global endpoint to speed up network traffic to your VPC by using 
 
 
 ## Targets
-- [[ELB]] ALB
-- [[ELB]] NLB
+- [[ALB]] ALB
+- [[NLB]] NLB
 - Elastic IP
 - [[EC2]]
 
 ## Health Checks
-- failover less than 1 min unhealty
-- good disater recovery
+- failover less than 1 min unhealthy
+- good disaster recovery
 
 ## Security
-- only 2 external ips need to be whitelisted
+- only 2 external IPs need to be allowed
 
 

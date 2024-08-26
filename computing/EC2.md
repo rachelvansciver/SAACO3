@@ -76,14 +76,14 @@ EC2 is a the combination of a virtual machine and hardware capacity attached to 
 #### Default
 - 1 Year OR 3 Years 
 - Cheaper than on demand
-- Need to specify type os, region, tenacy
+- Need to specify type os, region, tenancy
 - Cheaper if payed upfront
 - Scope reserve in zone and AZ
 - You can sell peer to peer in marketplace
 
 #### Convertible
 - More expensive than default
-- Can change instance type, os, region, tenacy
+- Can change instance type, os, region, tenancy
 
 ### [[SavingsPlans]]
 - 1 Year OR 3 Years
@@ -192,7 +192,7 @@ Placement strategy for a group ec2 instances
 - cannot be used for windows 
 
 ### ENA Elastic Network Adapter
-- use for high performance networking capabilitiies
+- use for high performance networking capabilities
 - slower than efa
 
 ## EC2 Hibernate
@@ -205,8 +205,8 @@ Placement strategy for a group ec2 instances
 
 ## EC2 Instance Recover
 - Creates a new EC2 instance which is identical to the previous ec2
-- recovers private and public ip, metadat, elastic ip, instandce id
+- recovers private and public ip, metadata, elastic ip, instance id
 - data in memory is lost
 
 ## Limits
-- by default your account has a maximum limit for ec2 instances based on the total vcpu used, you can submit a request to increase that limit
+- by default your account has a maximum limit for ec2 instances based on the total vCPU used, you can submit a request to increase that limit

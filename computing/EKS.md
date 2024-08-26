@@ -6,18 +6,18 @@ Kubernetes in AWS. [[ECS]] Default options are not Kubernetes, but AWS own tech.
 
 ## Options
 
-### Manged Node Groups
+### Managed Node Groups
 - Creates [[EC2]] instances for you
 - [[ASG]] managed by [[EKS]]
 - Supports on demand and spot instances
 
 ### Self Managed
 - [[EC2]] are created by the user and registered to the cluster
-- Can use prebuild [[EKS]] optimized [[AMi]]
-- Supports on demand or spot instaces
+- Can use prebuilt [[EKS]] optimized [[AMI]]
+- Supports on demand or spot instances
 
 ### Fargate
-- No nodes, instances or maintance required
+- No nodes, instances or maintenance required
 
 ## Data volumes
 - Need to specify storage class
@@ -26,5 +26,5 @@ Kubernetes in AWS. [[ECS]] Default options are not Kubernetes, but AWS own tech.
 - [[FSxLustre]]
 - FSx for NetApp ONETAP
 
-## Authentification
-- Need a config map to map IAM to Kubernetes RBAC System (is automaticly created)
+## Authentication
+- Need a config map to map IAM to Kubernetes RBAC System (is automatically created)

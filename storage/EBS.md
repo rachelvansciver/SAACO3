@@ -13,12 +13,12 @@ This is network storage attached to an [[EC2]] instance.
 - need snapshot to move AZ
 - uses provisioned capacity (Size and IOPS)
 - you get billed even if drive is not full
-- delete on terminiation is an option
-- can be modified while in use (iops and capacity)
+- delete on termination is an option (defaults to true for root volume, not true for other volumes)
+- can be modified while in use (I/O's and capacity)
 
 ## Snapshot
-- is a Backup, can be done durin attachment
-- Backups can be copied to diffrent region
+- is a Backup, can be done during attachment
+- Backups can be copied to different region
 - snapshot can be done while the volume is being used
 
 ### EBS Snapshot Archive
@@ -28,11 +28,11 @@ This is network storage attached to an [[EC2]] instance.
 - can enable recycle for recovery (retention 1day - 1 year)
 
 ### Fast Snapshot Restore (FSR)
-- cost alot
+- cost a lot
 - no latency with restore
 
 ## Volume types
-- only ssd volumes can be used as boot volumes
+- only SSD volumes can be used as boot volumes
 
 ### GP2/GP3
 - general purpose SSD
@@ -41,7 +41,7 @@ This is network storage attached to an [[EC2]] instance.
 - 1 GiB - 16 TiB
 
 #### gp3
-- baselane of 3k iops and 125mibs
+- base line of 3k iops and 125mibs
 - can be increased to 16k iops and 1k mibs
 
 #### gp2
@@ -53,19 +53,19 @@ This is network storage attached to an [[EC2]] instance.
 ### IO1/IO2
 - high performance SSD
 - mission critical, low latency
-- 4Gib - 16TiB
-- max piops 64k for nitro ec2 
-- max piops 32k for non nitro
+- 4GiB - 16TiB
+- max Piops 64k for nitro ec2 
+- max Piops 32k for non nitro
 - io2 ist just better
 - iops gb ratio 50:1 (10GB max 500 iops)
 
 #### io2 block express
-- sub milisecond latency
+- sub millisecond latency
 - max piops 256k 
 - iops gb ratio of 1000:1
 
-### hdds
-- 125mb - 16 tb
+### HDDs
+- 125mb - 16 Tb
 - cannot be boot volume
 
 #### st1 - low cost hdd volume
@@ -79,8 +79,8 @@ This is network storage attached to an [[EC2]] instance.
 - hdd less frequently accessed workloads (lowest cost)
 - 250mbs and 250 iops
 
-### provisioned iops ssd (piops)
-- critical buissness application with sustained iops performance
+### Provisioned iops ssd (piops)
+- critical business application with sustained iops performance
 - application which need more than 16k iops
 - good for database workloads, good storage pref and consistency
 - support ebs multi attach
@@ -103,14 +103,14 @@ This is network storage attached to an [[EC2]] instance.
 - Data at rest is encrypted
 - Data is encrypted in flight between [[EC2]] and [[EBS]]
 - Snapshot is encrypted
-- Volumes created from encrypted snapshot are encrypted aswell
+- Volumes created from encrypted snapshot are encrypted as well
 - handles by aws behind the scenes
 - minimal impact of latency
 - uses keys from [[KMS]] (AES-256)
 - copying and unencrypted snapshot enables encryption
 
 ### Encrypt currently not encrypted
-- created snaphsot
+- created snapshot
 - encrypt snapshot
 - create volume from snapshot
 - attach new volume
@@ -118,6 +118,6 @@ This is network storage attached to an [[EC2]] instance.
 ## Raid
 
 ### Raid 0
-- use if IO is more important than fault tolerance
+- use if I/O is more important than fault tolerance
 ### Raid 1
-- use if fault tolerance is more important than IO
+- use if fault tolerance is more important than I/O

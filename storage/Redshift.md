@@ -4,4 +4,4 @@
 
 
 ## Spectrum
-- attach S3 without the data being transfered to Redshift
+- attach S3 without the data being transferred to Redshift

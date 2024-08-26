@@ -2,7 +2,7 @@
 # Elastic Beanstalk
 
 ## TLDR
-A quick way of hosting application without having to manage infrastructre. But you can modify your infrastructure post launch. It offers more control than [[AppRunner]]. 
+A quick way of hosting application without having to manage infrastructure. But you can modify your infrastructure post launch. It offers more control than [[AppRunner]]. 
 
 Features
 - supports docker

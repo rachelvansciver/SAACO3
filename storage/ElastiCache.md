@@ -2,15 +2,15 @@
 # Elasticache
 
 ## TLDR
-Voliltile Caching Layer with high performance.
+Volatile Caching Layer with high performance.
 
 ## Features
 - in memory data store
 - boost performance of databases
-- use cases caching, session stores, gaming, geospatial services, real time analytics and queuing
+- use cases: caching, session stores, gaming, geo-spatial services, real time analytics and queuing
 - for relational databases caching layer
 - helps make app stateless
-- aws manged (os, patching, monitoring, failure recover, backups)
+- aws managed (os, patching, monitoring, failure recover, backups)
 - requires app changes
 
 ## Use Cases
@@ -23,14 +23,14 @@ Voliltile Caching Layer with high performance.
 ## Redis
 - see [[Redis]]
 
-## Memcached
+## Elasticache with Memcached
 - open source memory store
 - multithreaded
 - no replication
 - no snapshots
 - no transactions
 - no pub/sub
-- no geosparital support
+- no geo-spatial support
 - no lua scripting
 - no high availabilty
 - sharding
@@ -40,7 +40,7 @@ Voliltile Caching Layer with high performance.
 
 ## Security
 - no [[IAM]] Auth
-- can us ssl encruption for in flight
+- can use ssl encryption for in flight
 
 ## Loading patterns
 - lazy (all read data is cached, but can become stale)

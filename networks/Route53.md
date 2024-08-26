@@ -2,49 +2,49 @@
 # Route 53
 
 ## TLDR
-AWS Nameserver and Domain Name register Service.
+AWS Name server and Domain Name Registration Service.
 
 ## Features
 - managed
 - scalable
-- authorative dns (can be updated by customer)
-- registar ( can register own names)
-- 100% availabilty
+- authoritative DNS (can be updated by customer)
+- registrar ( can register own names)
+- 100% availability
 - health checks
 
 
 ## DNS Record
-- domanin name
+- domain name
 - record Type
 - value (ip)
 - routing policy
-- ttl
+- time to live (TTL)
 
 ### Record types
 
 #### A
-- hostname to ipv4
+- hostname to IPv4
 
 #### AAAA
 - hostname to ipv6
 
 #### CNAME
-- maps dns querys to another domain or subdomain
+- maps DNS queries to another domain or subdomain
 - AAAA
 - CNAME
 - NS
 
 #### Alias
 - can target a root domain (cname can not)
-- can only be used for aws ressources
+- can only be used for aws resources
 
 ## Endpoint types
 
 ### Outbound
-- used by ressources in [[VPC]] to resolve dns querys to ressources outside of the [[VPC]]  (e.g. on premise)
+- used by resources in [[VPC]] to resolve DNS queries to resources outside of the [[VPC]]  (e.g. on premise)
 
 ## Inbound
-- used by ressources outside of aws to resolve name to ressources inside a [[VPC]]
+- used by resources outside of aws to resolve DNS name to resources inside a [[VPC]]
 
 ## Routing Types
 

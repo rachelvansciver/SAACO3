@@ -2,4 +2,4 @@
 - fully managed document database
 - supports mongoDB
 - replication across 3 AZ
-- storage grows automaticly
+- storage grows automatically

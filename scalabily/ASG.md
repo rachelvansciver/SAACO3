@@ -2,13 +2,13 @@
 # Auto Scaling Group
 
 ## TLDR
-A Group of [[EC2]] Instances scaled horizontally, can use an [[ELB]] or work without it if there is no incomming traffic. Can use [[ELB]] or [[EC2]] health checks. Can also be used for [[ECS]] in which case it uses a ecs service as target.
+A Group of [[EC2]] Instances scaled horizontally, can use an [[ELB]] or work without it if there is no incoming traffic. Can use [[ELB]] or [[EC2]] health checks. Can also be used for [[ECS]] in which case it uses a ecs service as target.
 
 ## Features
-- scale horizontaly
+- scale horizontally
 - scale out and in
 - ensure maximum and minimum ec2s
-- automaticly register EC2 with load balancer
+- automatically register EC2 with load balancer
 - if instance is unhealthy it will be terminated and recreated
 - set desired capacity
 
@@ -19,7 +19,7 @@ A Group of [[EC2]] Instances scaled horizontally, can use an [[ELB]] or work wit
 - can mix on demand and spot instances
 
 ## Launch configuration
-- defines instace configuration (size etc)
+- defines instance configuration (size etc)
 - AMI
 - instance Type
 - key pair

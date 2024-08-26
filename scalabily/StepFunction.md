@@ -8,7 +8,7 @@
 - error handling
 - human approval
 ## Integrations
-- Lmabda
+- Lambda
 - ec2
 - ecs
 - on prem,ise servers

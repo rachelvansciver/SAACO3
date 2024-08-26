@@ -1,6 +1,5 @@
 # Amazon FsX for Windows File Server
 - fully managed
-- highly reliaable
+- highly reliable
 - SMB protocol
 - AD Integration
--

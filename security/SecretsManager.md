@@ -4,7 +4,7 @@
 - secrets can be encrypted using kms
 
 ## Multi Region Secrets
-- replicate secret accros regions
-- creartes replica secrets
+- replicate secret across regions
+- creates replica secrets
 - can promote replica secrets to master
-- used for disatery recovery of rds e.g.
+- used for disaster recovery of RDS e.g.

@@ -1,12 +1,11 @@
 # Keyspaces
 - managed 
 - serverless
-- apache cassandra
-- multi az replication
-- tables scales automatily
+- compatible apache cassandra
+- multi-az replication
+- tables scales automatically
 - single digit ms latency
-- use Cassandra Query Lanage CQL
 
 ## Use Cases
-- store Iot Data
+- store IoT Data
 - time series Data

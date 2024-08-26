@@ -7,24 +7,24 @@ NoSQL Serverless DB. Tons of features and can be global.
 ## Features
 - NoSQL
 - serverless
-- milisec latency
-- key value doc db
-- single digit milisecond performance
+- millisecond latency
+- key value document db
+- single digit millisecond performance
 - multi az
-- fully manged
-- multi master
+- fully managed
+- multi-master
 - backup and restore
 - in memory caching
-- transaction capabilty
+- transaction capability
 
 ##  Capacity Modes
-- provisoned capacity with optional autoscaling
+- provisioned capacity with optional autoscaling
 - on demand capacity
 
 ## Use cases
-- can replace elasticache (stroing session data with ttl feature)
+- can replace elasticache (storing session data with ttl feature)
  - serverless apps
- - rapdily evolve schemas
+ - rapidily evolve schemas
  - small documents 100bs
  - distributed serverless cache
 
@@ -36,20 +36,20 @@ NoSQL Serverless DB. Tons of features and can be global.
 ## Auth
 - [[IAM]]
 
-## Dynamo DB STream
+## Dynamo DB Stream
 - event processing
 - invoke [[Lambda]] or send to [[Kinesis]]
 - 24 hour retention 
 - limited number of consumers
 
-## Dynamo DB Kinesis Data Steams
+## Dynamo DB Kinesis Data Streams
 - 1 year retention
 - all features of [[Kinesis]]
 
 ## Global Tables
-- active active setup for multi region
+- active setup for multi region
 - two way replication
-- must enable Streams as prerequiste
+- must enable Streams as prerequisite
 
 ## Backups
 - automated backups up to 35 days with PITR to restore to new table

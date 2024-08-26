@@ -1,15 +1,15 @@
-# NAT
-- used in a public vpc subnet to enable instances in private subnet outbut ipv4 traffic to the internet
-- supports ACLs
+# NAT (Network Address Translation)
+- used in a public [[VPC]] subnet to enable instances in private subnet to output IPv4 traffic to the internet
+- supports ACLs (access control list)
 - supports flow logs
-## Nat Instance
-- dedicated ec2 instance
-- port forwarding
+## NAT Instance
+- dedicated EC2 instance
+- Port forwarding
 - can be used as bastion host
-- supports SG attachment
-## Nat Gateway
-- aws service
-- higher availabilty
-- higher bandwith
+- supports security group attachment
+## NAT Gateway
+- AWS service
+- higher availability
+- higher bandwidth
 - less ops needed
 

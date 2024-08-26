@@ -2,7 +2,7 @@
 # Comprehend
 
 ## TLDR
-This AI reads natural language and interprets/processes it. Its a fully manged an serverless service.
+This AI reads natural language and interprets/processes it. Its a fully managed and serverless service.
 
 ## Aspects
 - language
@@ -10,7 +10,7 @@ This AI reads natural language and interprets/processes it. Its a fully manged a
 - people
 - events
 - topics
-- parts of spech
+- parts of speech
 - positive or negative text
 
 ## Use cases

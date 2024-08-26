@@ -2,8 +2,8 @@
 # VPC Virtual Private Cloud
 
 ## TLDR
-A stack of AWS ressources, more clearly the connectivity and setup options for and between these ressources.
-
+A stack of AWS resources, more clearly the connectivity and setup options for and between these resources.
+Cannot disable IPv4
 ## Console Wizard
 
 ### Options
@@ -13,7 +13,7 @@ A stack of AWS ressources, more clearly the connectivity and setup options for a
 - internet gateway
 - recommended for simple public facing application
 
-#### VPC withg public and private subnets
+#### VPC with public and private subnets
 - public subnet
 - private subnet
 - internet gateway
@@ -22,9 +22,9 @@ A stack of AWS ressources, more clearly the connectivity and setup options for a
 #### VPC with public, private subnets and AWS Site-to-Site [[VPN]]
 - public subnet
 - private subnet
-- virtual private gatway
+- virtual private gateway
 - internet gateway
-- recommended to extend network into the cloud and some ressource are internet facing
+- recommended to extend network into the cloud and some resource are internet facing
 
 #### VPC with private subnet and AWS Site-to-Site [[VPN]]
 - private subnet
@@ -32,26 +32,26 @@ A stack of AWS ressources, more clearly the connectivity and setup options for a
 - recommended to extend private network into the cloud
 
 ## VPC Endpoint
-- privatly connect a VPC to supported services 
+- privately connect a VPC to supported services 
 - does not require an internet gateway, [[NAT]], [[VPN]] or [[DirectConnect]]
-- instances dont require public ip adresses
+- instances don't require public IP addresses
 - uses AWS Private Link as connection Line
-- data does not leave AWS while communicatiing
-- doesn not support inter region communication
+- data does not leave AWS while communicating
+- doesn't not support inter region communication
 
 ### Interface Endpoint
-- eni with private ip adress in the target subnet
+- ENI with private ip address in the target subnet
 
 ### Gateway Endpoint
 - only for [[S3]] and [[DynamoDB]]
 - gateway which you set as a route target 
 
 ## VPC Peering
-- connection between 2 VPCs using private adresses
+- connection between 2 VPCs using private addresses
 - not transitive
 - need to setup route tables
 
-### Transit Gatway
+### Transit Gateway
 - hub for multiple peering connections
 - attach options are, vpc, direct connect gateway or another transit gateway either as peering or vpn
 - MTU = max package size
@@ -62,11 +62,11 @@ A stack of AWS ressources, more clearly the connectivity and setup options for a
 - gives double throughput of virtual private gateway by using ECMP support
 
 ## VPC Sharing
-- share one or more subnets within other accounts beloning to the same [[AWSOrganisations]]
-- every account can only work with the ressources they created
+- share one or more subnets within other accounts belonging to the same [[AWSOrganisations]]
+- every account can only work with the resources they created
 
 ## VPC Flow Logs
-- Capture Information about IP traffic through your interfacines
+- Capture Information about IP traffic through your interfaces
 - VPC Flow Logs
 - Subnet Flow Logs
 - ENI Flow Logs
@@ -97,10 +97,10 @@ A stack of AWS ressources, more clearly the connectivity and setup options for a
 ## NACL
 - not stateful
 - firewall on subnet level
-- for outbound traffic allow ephemeral ports 32768-65535 (all ports for diffrent services to listen for outbound traffic)
+- for outbound traffic allow ephemeral ports 32768-65535 (all ports for different services to listen for outbound traffic)
 
 ## VPC Traffic Mirroring
 - capture and inspect network traffic
 - unintrusive
 - traffic gets direct to security applicance fleet
-- fleet redicet traffic back
+- fleet redirect traffic back

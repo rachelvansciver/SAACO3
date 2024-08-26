@@ -2,43 +2,43 @@
 # AWS Lambda
 
 ## TLDR
-AWS Lambda means you dont care about any infrastructure, you just upload a function to aws. You can than use that function from other services like  [[APIGateway]], [[SNS]] or even [[CLI]]. You upload Lambda code as a zip.
+AWS Lambda means you don't care about any infrastructure, you just upload a function to aws. You can than use that function from other services like  [[APIGateway]], [[SNS]] or even [[CLI]]. You upload Lambda code as a zip.
 
 ## Features
 - Run code serverless
 - Pay per compute time
 - Scaling is automated
 - No charge if not running
-- Operates from AWS owned[[VPC]]
+- Operates from AWS owned [[VPC]]
 - By default only public traffic
-- You can enable function [[VPC]] access if you need private ressources from your [[VPC]]
+- You can enable function [[VPC]] access if you need private resources from your [[VPC]]
 - Scale up based on request amount
 - Can set custom function timeout
 - Can be packaged and deployed as container images
 
 ## Drawbacks
 - Limited by time SHORT EXECUTIONS
-- if you need both private and public ressources, you will have to enable [[VPC]] access and use a nat gateway to access the internet
+- if you need both private and public resources, you will have to enable [[VPC]] access and use a nat gateway to access the internet
 
 ## Security
 
 ### Lambda authorizer
-- Send additonal info based of bearer token or request context
+- Send additional info based of bearer token or request context
 - Is useful because you can skip having too lookup users inside of your function  (you pass the user data)
-- Dont pass credentials! (Though you could)
+- Don't pass credentials! (Though you could)
 
 ## Compute Power
 - Relative to memory allocation which can be manually set
 
 ## Lambda Layer
-- Zip archive which contains librarties, custom runtime and other dependecies
+- Zip archive which contains libraries, custom runtime and other dependencies
 - A single function can use up to 5 layers
 - Can use self created layers or already published ones
 - Unzipped size cannot exeed 250mb for a function and all layers which it depends on
 
 ## Container Image
 - If using an image the image must implement the  [[Lambda]] runtime api
-- [[ECS]] and Fargate are prefered for this use case
+- [[ECS]] and Fargate are preferred for this use case
 
 ## Price
 - Pay per call first 1 mill are free
